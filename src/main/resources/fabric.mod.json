@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "spirits-of-japan",
+	"version": "${version}",
+	"name": "Spirits of Japan",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/spirits-of-japan/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.erin.soj.SpiritsOfJapan"
+		],
+		"client": [
+			"net.erin.soj.SpiritsOfJapanClient"
+		],
+		"fabric-datagen": [
+			"net.erin.soj.SpiritsOfJapanDataGenerator"
+		]
+	},
+	"mixins": [
+		"spirits-of-japan.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
