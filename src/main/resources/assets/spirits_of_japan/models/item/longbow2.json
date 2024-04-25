@@ -1,0 +1,6 @@
+{
+  "parent":  "spirits_of_japan:item/longbow_3d",
+  "textures": {
+    "layer0": "spirits_of_japan:item/longbow_3d_2"
+  }
+}

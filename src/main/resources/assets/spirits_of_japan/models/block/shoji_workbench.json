@@ -1,0 +1,6 @@
+{
+  "parent" : "block/cube_all",
+  "textures" : {
+    "all" : "spirits_of_japan:block/test_block"
+  }
+}

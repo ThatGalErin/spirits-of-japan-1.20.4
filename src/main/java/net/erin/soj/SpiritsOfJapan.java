@@ -1,5 +1,12 @@
 package net.erin.soj;
 
+import net.erin.soj.block.ModBlocks;
+import net.erin.soj.block.entity.ModBlockEntities;
+import net.erin.soj.entity.ModEntities;
+import net.erin.soj.item.ModItemGroups;
+import net.erin.soj.item.ModItems;
+import net.erin.soj.util.ModRegistries;
+import net.erin.soj.screen.ModScreenHandlers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,10 +18,12 @@ public class SpiritsOfJapan implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		ModRegistries.registerModStuffs();
+		ModItemGroups.registerModGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandler();
 	}
 }

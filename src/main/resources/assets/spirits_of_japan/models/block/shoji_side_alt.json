@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "spirits_of_japan:block/shoji_top",
+    "pane": "spirits_of_japan:block/shoji"
+  }
+}
